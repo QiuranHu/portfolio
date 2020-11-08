@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.portfolio__header {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #111111;
+  color: #fff;
+}
+
+.portfolio__header-blm {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 5px;
+}
+
+@keyframes portfolio__fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.portfolio__header-name {
+  font-size: 10em;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  animation: portfolio__fadein 4s;
+}
+
+@media only screen and (max-width: 800px) {
+  .portfolio__header-name {
+    font-size: 5em;
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio__header-name {
+    font-size: 3em;
+  }
+}
+
+.portfolio__remaining {
+  height: 100vh;
+}
